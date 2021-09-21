@@ -1,0 +1,8 @@
+//無線LANのSSID
+ char *ssid = "hogehoge";
+
+//無線LANのパスワード
+ char *password = "fugafuga";
+
+//スプレッドシートのURL
+ char* published_url = "https://script.google.com/macros/s/hogehoge/exec";
