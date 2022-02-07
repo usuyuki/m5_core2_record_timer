@@ -120,10 +120,10 @@ void loop(){
       /*
       ジャンル選択画面
       */
-      M5.Lcd.drawString("AmateurRadio", 20, 0, 2);//x,y,size
-      M5.Lcd.drawString("BasicInfo", 20, 50, 2);//x,y,size
+      M5.Lcd.drawString("StudyEnglish", 20, 0, 2);//x,y,size
+      M5.Lcd.drawString("U-labProject", 20, 50, 2);//x,y,size
       M5.Lcd.drawString("Programming", 20, 100, 2);//x,y,size
-      M5.Lcd.drawString("ReadingBooks", 20, 150, 2);//x,y,size
+      M5.Lcd.drawString("Exercise", 20, 150, 2);//x,y,size
       M5.Lcd.drawString("ContentConsumption", 20, 200, 2);//x,y,size
 
       M5.Lcd.drawLine(0, 50, 2000,50,BLUE);  
@@ -133,14 +133,14 @@ void loop(){
 
       // M5.Lcd.sleep(); 
       if(pos.y <= 50&&pos.y >= 1){
-        timer_type="AmateurRadio";
+        timer_type="StudyEnglish";
         M5.Lcd.fillScreen(TFT_BLACK);
         timer_status="STOP";
         delay(100);
         start_time=millis();
         
       }else if(pos.y > 50&&pos.y <= 100){
-        timer_type="BasicInfo";
+        timer_type="U-labProject";
         M5.Lcd.fillScreen(TFT_BLACK);
         timer_status="STOP";
         delay(100);
@@ -154,7 +154,7 @@ void loop(){
         start_time=millis();
         
       }else if(pos.y > 150&&pos.y <= 200){
-        timer_type="ReadingBooks";
+        timer_type="Exercise";
         M5.Lcd.fillScreen(TFT_BLACK);
         timer_status="STOP";
         delay(100);
